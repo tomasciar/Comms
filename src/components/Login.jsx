@@ -35,7 +35,7 @@ const Login = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" style="{styles.wrapper}">
       <div className="form">
         <h1 className="title">Comms</h1>
         <form onSubmit={handleSubmit}>
@@ -66,5 +66,12 @@ const Login = () => {
     </div>
   );
 };
+
+const styles = StyleSheet.create({
+  wrapper: {
+    flex: 1,
+    backgroundColor: "#ffffff"
+  }
+});
 
 export default Login;

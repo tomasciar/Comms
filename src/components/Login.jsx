@@ -35,7 +35,7 @@ const Login = () => {
   };
 
   return (
-    <div className="wrapper" style="{styles.wrapper}">
+    <div className="wrapper">
       <div className="form">
         <h1 className="title">Comms</h1>
         <form onSubmit={handleSubmit}>
@@ -48,7 +48,7 @@ const Login = () => {
             required
           />
           <input
-            type="text"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="input"
@@ -63,15 +63,23 @@ const Login = () => {
           <h2 className="error">{error}</h2>
         </form>
       </div>
+
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
   );
 };
-
-const styles = StyleSheet.create({
-  wrapper: {
-    flex: 1,
-    backgroundColor: "#ffffff"
-  }
-});
 
 export default Login;

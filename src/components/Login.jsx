@@ -7,6 +7,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  // Async function to make login work
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -27,6 +28,7 @@ const Login = () => {
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
 
+      // Reload window
       window.location.reload();
     } catch (error) {
       // Error message if credentials don't match current user
@@ -35,6 +37,7 @@ const Login = () => {
   };
 
   return (
+    // Login form and background of login form
     <div className="wrapper">
       <div className="form">
         <h1 className="title">Comms</h1>
@@ -63,7 +66,6 @@ const Login = () => {
           <h2 className="error">{error}</h2>
         </form>
       </div>
-
       <div className="area">
         <ul className="circles">
           <li></li>
@@ -82,4 +84,5 @@ const Login = () => {
   );
 };
 
+// Export for use in index.js
 export default Login;

@@ -18,4 +18,5 @@ const App = () => {
   );
 };
 
+// Export for use in index.js
 export default App;

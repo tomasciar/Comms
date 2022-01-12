@@ -11,7 +11,9 @@ const App = () => {
   return (
     <ChatEngine
       height="100vh"
+      // Settings from ChatEngine
       projectID="099d4ba3-0f22-4091-ace2-9b9f747d7adb"
+      // Get username and password from local storage log in
       userName={localStorage.getItem("username")}
       userSecret={localStorage.getItem("password")}
     />

@@ -69,11 +69,15 @@ body {
 
 /* Styles for chat section */
 
-.ce-message-bubble,
+.ce-my-message-bubble,
 .ce-chat-unread-dot,
 #ce-send-message-button,
 #new-chat-plus-button {
   background-color: #4e54c8 !important;
+}
+
+.ce-their-message-bubble {
+  background_color: white;
 }
 
 .ce-chat-form-container {
